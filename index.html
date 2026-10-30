@@ -264,10 +264,10 @@
         <span class="k">프레임 선택</span>
         <div class="frame-seg" id="optSpecial2" role="group" aria-label="프레임">
             <button data-v="none" class="on">기본</button>
-            <button data-v="1">도치학 1</button>
-            <button data-v="2">도치학 2</button>
-            <button data-v="c1">오중님 1</button>
-            <button data-v="c2">오중님 2</button>
+            <button data-v="1">도치학 (말랑콩떡Ver.)</button>
+            <button data-v="2">도치학 (힙스터Ver.)</button>
+            <button data-v="c1">오중님 (힙스터Ver.)</button>
+            <button data-v="c2">오중님 (말랑콩떡Ver.)</button>
           </div>
       </div>
 
@@ -1084,7 +1084,7 @@
     done(url); showFallbackImage(blob);
   }
   // 방문·저장 통계 (GoatCounter: 쿠키·개인정보 없이 횟수만)
-  const FRAME_NAME = { none: '기본', 1: '도치학1', 2: '도치학2', c1: '오중님1', c2: '오중님2' };
+  const FRAME_NAME = { none: '기본', 1: '도치학 말랑콩떡', 2: '도치학 힙스터', c1: '오중님 힙스터', c2: '오중님 말랑콩떡' };
   function track(path, title) { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path, title, event: true }); } catch (e) {} }
   $('btnSave').onclick = async () => {
     track(`save/${state.special}/${lay()}`, `저장 · ${FRAME_NAME[state.special]} · ${{ strip: '1×4', grid: '2×2', duo: '단체2컷' }[lay()]}`);
